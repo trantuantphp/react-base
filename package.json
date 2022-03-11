@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "bin": {
+        "create-react-base": "bin/create-react-base.js"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack serve --config webpack/webpack.dev.js --stats-error-details",
