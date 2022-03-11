@@ -1,0 +1,14 @@
+.layout {
+    height: 100vh;
+    &-main {
+        height: calc(100vh - 48px);
+    }
+    &-header {
+        height: 48px !important;
+    }
+    &-sidebar {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    &-content {
+    }
+}
