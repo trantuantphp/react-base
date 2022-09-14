@@ -4,3 +4,4 @@ export const Page404 = lazy(() => import("./404"));
 
 export const Home = lazy(() => import("./Home"));
 export const Login = lazy(() => import("./Login"));
+export const Cron = lazy(() => import("./Cron"));

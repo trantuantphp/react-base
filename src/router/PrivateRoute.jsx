@@ -23,6 +23,7 @@ const PrivateRoute = observer(({ children }) => {
                 }
             }
         } catch (error) {
+            console.log(error);
             errorM(error.toString());
         } finally {
             setLoading(false);
@@ -30,7 +31,11 @@ const PrivateRoute = observer(({ children }) => {
     };
 
     useEffect(async () => {
-        await loadAuth();
+        async function _loadAuth() {
+            await loadAuth();
+        }
+
+        _loadAuth();
     }, []);
 
     if (loading) return loadingM("Authenticating ...", 0);
